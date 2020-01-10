@@ -1,0 +1,52 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<div class="container">
+  <div class="col-md-6">
+    <div class="row">
+      <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <!-- Name Form -->
+        <div style="margin-left: 5%;" class="form-group">
+  
+          <label style="font-family: 'Lobster', cursive;"for="name">Author:</label>
+          <br>
+          <input style="width: 120%; height: 30%;border: 2px solid rgb(209, 5, 209);" type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required >
+          
+          <br>
+  
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <p> Author is Required</p>
+          
+          </div>
+        </div>
+  
+        <!-- Quote Input -->
+        <div style="margin-top:3%;margin-left: 5%;" class="form-group">
+  
+          <label style="font-family: 'Lobster', cursive;" for="description">Quote:</label>
+          <br>
+          <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required style="width: 120%;border: 2px solid rgb(202, 5, 209); border-radius:12px;" ></textarea>
+          <br>
+          <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+            <br>
+            <p> Quote is Required</p>
+          
+          </div>
+        </div>
+  
+        <!-- Date Input -->
+        <div style="margin-left: 5%; margin-top:1%;" class="form-group">
+          <label style="font-family: 'Lobster', cursive;" for="complete">Date:</label>
+          <br>
+          <input class="form-control" style="border: 2px solid rgba(202, 5, 209); margin-left:8%;" type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+          <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+            <p> Complete Date is Required</p>
+          
+          </div>
+  
+        </div>
+        
+        <button style="margin-left: 30%; margin-top: 2%; background-color:rgb(106, 77, 235); border-radius:12px;" type="submit" id="button" >Add Quote</button>
+      </form>
+    </div>
+  </div>
+    
+  </div>
