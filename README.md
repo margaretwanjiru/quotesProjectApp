@@ -6,8 +6,8 @@ Margaret Irungu
 ## code beat
 
 This is a live link to the project https://margaretwanjiru.github.io/quotesProjectApp/
-<!-- 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.It mainly deals with publishing a quote where one is able to see the date published and the name of the person who published it. -->
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.It mainly deals with publishing a quote where one is able to see the date published and the name of the person who published it.
 
 ## Development server
 
