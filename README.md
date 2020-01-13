@@ -3,7 +3,7 @@
 ## Author
 Margaret Irungu
 
-## code beat
+[![codebeat badge](https://codebeat.co/badges/075c93ec-d713-424f-b850-a9184b75de1b)](https://codebeat.co/projects/github-com-margaretwanjiru-quotesprojectapp-master)
 
 This is a live link to the project https://margaretwanjiru.github.io/quotesProjectApp/
 
